@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<div ><h1 align="center" style="color:cadetblue ; font-size:35px" ; >在线水质数据</h1></div>
+<style>h1{background: antiquewhite;
+        height: auto}</style>
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>index</title>
+    {% load static %}
+
+    <style type="text/css">
+    .tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
+    .tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
+    .tftable tr {background-color:#d4e3e5;}
+    .tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
+    .tftable tr:hover {background-color:#ffffff;}
+    </style>
+
+    <script type='text/javascript' src="{% static 'data_js.js' %}"></script>
+    <script>
+    function myrefresh() {
+        window.location.reload();
+    }
+    setTimeout('myrefresh()', 5000); //指定1秒刷新一次
+    </script>
+
+    <script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+</head>
+<body>
+    <table class="tftable" border="1">
+        <tr><th>池子序号</th><th>当前时间</th><th>温度值</th><th>PH值</th><th>溶氧值</th></tr>
+        <tr><td>1</td><td>{{ time }}</td><td>{{ t1 }}</td><td>{{ ph1 }}</td><td>{{ ox1 }}</td></tr>
+        <tr><td>2</td><td>{{ time }}</td><td>{{ t2 }}</td><td>{{ ph2 }}</td><td>{{ ox2 }}</td></tr>
+        <tr><td>3</td><td>{{ time }}</td><td>{{ t3 }}</td><td>{{ ph3 }}</td><td>{{ ox3 }}</td></tr>
+        <tr><td>4</td><td>{{ time }}</td><td>{{ t4 }}</td><td>{{ ph4 }}</td><td>{{ ox4 }}</td></tr>
+        <tr><td>5</td><td>{{ time }}</td><td>{{ t5 }}</td><td>{{ ph5 }}</td><td>{{ ox5 }}</td></tr>
+        <tr><td>6</td><td>{{ time }}</td><td>{{ t6 }}</td><td>{{ ph6 }}</td><td>{{ ox6 }}</td></tr>
+        <tr><td>7</td><td>{{ time }}</td><td>{{ t7 }}</td><td>{{ ph7 }}</td><td>{{ ox7 }}</td></tr>
+        <tr><td>8</td><td>{{ time }}</td><td>{{ t8 }}</td><td>{{ ph8 }}</td><td>{{ ox8 }}</td></tr>
+        <tr><td>9</td><td>{{ time }}</td><td>{{ t9 }}</td><td>{{ ph9 }}</td><td>{{ ox9 }}</td></tr>
+        <tr><td>10</td><td>{{ time }}</td><td>{{ t10 }}</td><td>{{ ph10 }}</td><td>{{ ox10 }}</td></tr>
+        <tr><td>11</td><td>{{ time }}</td><td>{{ t11 }}</td><td>{{ ph11 }}</td><td>{{ ox11 }}</td></tr>
+        <tr><td>12</td><td>{{ time }}</td><td>{{ t12 }}</td><td>{{ ph12 }}</td><td>{{ ox12 }}</td></tr>
+        <tr><td>13</td><td>{{ time }}</td><td>{{ t13 }}</td><td>{{ ph13 }}</td><td>{{ ox13 }}</td></tr>
+        <tr><td>14</td><td>{{ time }}</td><td>{{ t14 }}</td><td>{{ ph14 }}</td><td>{{ ox14 }}</td></tr>
+        <tr><td>15</td><td>{{ time }}</td><td>{{ t15 }}</td><td>{{ ph15 }}</td><td>{{ ox15 }}</td></tr>
+        <tr><td>16</td><td>{{ time }}</td><td>{{ t16 }}</td><td>{{ ph16 }}</td><td>{{ ox16 }}</td></tr>
+        <tr><td>17</td><td>{{ time }}</td><td>{{ t17 }}</td><td>{{ ph17 }}</td><td>{{ ox17 }}</td></tr>
+        <tr><td>18</td><td>{{ time }}</td><td>{{ t18 }}</td><td>{{ ph18 }}</td><td>{{ ox18 }}</td></tr>
+        <tr><td>19</td><td>{{ time }}</td><td>{{ t19 }}</td><td>{{ ph19 }}</td><td>{{ ox19 }}</td></tr>
+        <tr><td>20</td><td>{{ time }}</td><td>{{ t20}}</td><td>{{ ph20 }}</td><td>{{ ox20 }}</td></tr>
+        <tr><td>21</td><td>{{ time }}</td><td>{{ t21 }}</td><td>{{ ph21 }}</td><td>{{ ox21 }}</td></tr>
+        <tr><td>22</td><td>{{ time }}</td><td>{{ t22 }}</td><td>{{ ph22 }}</td><td>{{ ox22 }}</td></tr>
+        <tr><td>23</td><td>{{ time }}</td><td>{{ t23 }}</td><td>{{ ph23 }}</td><td>{{ ox23 }}</td></tr>
+        <tr><td>24</td><td>{{ time }}</td><td>{{ t24 }}</td><td>{{ ph24 }}</td><td>{{ ox24 }}</td></tr>
+        <tr><td>25</td><td>{{ time }}</td><td>{{ t25 }}</td><td>{{ ph25 }}</td><td>{{ ox25 }}</td></tr>
+        <tr><td>26</td><td>{{ time }}</td><td>{{ t26 }}</td><td>{{ ph26 }}</td><td>{{ ox26 }}</td></tr>
+    </table>
+</body>
+</html>
