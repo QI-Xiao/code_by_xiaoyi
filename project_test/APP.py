@@ -5,7 +5,7 @@ from Car_API import api_run
 
 
 if __name__ == '__main__':
-
+# 改？？？？？？？？？？
     gui_process = Process(target=gui_run)
     #data_process = Process(target=data_run)
     data_process = Process(target=fun_test)
